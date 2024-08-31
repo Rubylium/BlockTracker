@@ -1,41 +1,25 @@
 {
 	"schemaVersion": 1,
 	"id": "blocktracker",
-	"version": "${version}",
-	"name": "blocktracker",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"version": "1.0.0",
+	"name": "Block Tracker",
+	"description": "A client-side mod to track block breaks per minute",
 	"authors": [
-		"Me!"
+		"Your Name"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/yourname/blocktracker"
 	},
-	"license": "CC0-1.0",
-	"icon": "assets/blocktracker/icon.png",
-	"environment": "*",
+	"license": "MIT",
+	"environment": "client",
 	"entrypoints": {
-		"main": [
-			"com.blocktracker.Blocktracker"
-		],
 		"client": [
-			"com.blocktracker.BlocktrackerClient"
+			"com.blocktracker.BlockTrackerMod"
 		]
 	},
-	"mixins": [
-		"blocktracker.mixins.json",
-		{
-			"config": "blocktracker.client.mixins.json",
-			"environment": "client"
-		}
-	],
 	"depends": {
-		"fabricloader": ">=0.15.11",
-		"minecraft": "~1.20.1",
-		"java": ">=17",
-		"fabric-api": "*"
-	},
-	"suggests": {
-		"another-mod": "*"
+		"fabricloader": ">=0.14.11",
+		"fabric-api": "*",
+		"minecraft": "1.20.1"
 	}
 }
